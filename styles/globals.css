@@ -1,0 +1,39 @@
+/* if vs code shows warning , go to setting -> CSS> Lint:Unknown At Rules -> select ignore */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .query-inputs {
+    @apply flex-1 px-2 py-2 bg-transparent outline-none;
+  }
+  .dropdownControlClass {
+    @apply !text-white !bg-dark-700 !border-gray-500;
+  }
+  .button {
+    @apply flex items-center h-10 p-2 px-3 space-x-2 bg-green-600;
+  }
+}
+
+@layer base {
+  body {
+    @apply font-serif text-gray-100 bg-dark-900;
+  }
+}
+
+.CodeMirror.cm-s-material.CodeMirror-wrap {
+  height: 100%;
+}
+.CodeMirror,
+.cm-s-material.CodeMirror {
+  background: transparent !important;
+}
+.CodeMirror-gutter {
+  background: #191a1e;
+}
+
+.CodeMirror {
+  font-family: Arial, monospace;
+  font-size: 16px;
+}
