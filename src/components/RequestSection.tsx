@@ -247,7 +247,7 @@ const RequestSection = () => {
         </button>
         <button
           className="bg-yellow-800 button"
-          onClick={() => window.open("")}
+          onClick={() => window.open("https://github.com/Hemantkoli/Postwoman")}
         >
           <FaGithub />
           <span className="hidden sm:block">Github</span>
